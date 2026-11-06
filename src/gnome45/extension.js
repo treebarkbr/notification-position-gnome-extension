@@ -69,7 +69,7 @@ class NotificationPositionIndicator extends PanelMenu.Button {
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
         const marginItem = new PopupMenu.PopupBaseMenuItem({ activate: false });
-        const marginBoxLayout = new St.BoxLayout({ vertical: true, x_expand: true });
+        const marginBoxLayout = new St.BoxLayout({ orientation: Clutter.Orientation.VERTICAL, x_expand: true });
         const marginLabel = new St.Label({ text: 'Vertical Margin' });
         marginBoxLayout.add_child(marginLabel);
         
